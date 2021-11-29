@@ -147,8 +147,8 @@ class CheckingView(View):
 
             if authenticates:
                 login(self.request, user=user)
-                redirect('profiles:index')
-
+        
+        redirect('profiles:index')
         return self.render
 
     def get(self, *args, **kwargs):
@@ -244,9 +244,9 @@ class JuridicalView(View):
 
             if authenticates:
                 login(self.request, user=user)
-                redirect('profiles:index')
-
-
+                
+                
+        redirect('profiles:index')
         return self.render
 
     def get(self, *args, **kwargs):
@@ -342,8 +342,8 @@ class SavingsView(View):
 
             if authenticates:
                 login(self.request, user=user)
-                redirect('profiles:index')
-
+        
+        redirect('profiles:index')
         return self.render
 
     def get(self, *args, **kwargs):
