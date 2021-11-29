@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" action="{% url 'counts:deposit' %}">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="deposit">Deposito</label>
+      <input name="deposit" type="number" class="form-control" id="deposit" placeholder="Digite o valor a ser depositado">
+    </div>
+    <button type="submit" class="btn btn-primary">Depositar</button>
+</form>
+{% endblock %}

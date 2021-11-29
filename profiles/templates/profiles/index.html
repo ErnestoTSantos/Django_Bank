@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <picture class="col-md col-6">
+                <h3 class="text-justify">Ernesto Terra dos Santos</h3>
+                <source srcset="{% static 'images/Linked.jpeg' %}" type="image/svg+xml">
+                <img src="{% static 'images/Linked.jpeg' %}" class="img-fluid img-thumbnail" height="400" width="400" alt="Imagem do desenvolvedor">
+                <h5 class="text-justify mt-2">Projeto desenvolvido no final do segundo semestre de ciência da computação</h5>
+            </picture>
+        </div>
+        <div class="col-md col-6">
+            <h4>Motivo do desenvolvimento do projeto:</h4>
+            <p class="text-justify">O projeto foi desenvolvido como trabalho de G2 para minha cadeira na faculdade de Orientação a Objetos.</p>
+            <br>
+            <h4>Sobre o projeto:</h4>
+            <p class="text-justify">
+                Tem como intuito parecer um sistema bancário, com algumas coisas mais simplificadas, mas possibilitando ao usuário realizar depósitos, saques e criar diferentes contas.
+                A principal ideia do projeto era me desafiar a compreender melhor a utilização do Django framework que é um framework para desenvolvimento de sites web com python, e esse
+                objetivo principal foi alcançado. A parte do front-end foi realizada com a ajuda do bootstrap, mas como não tive um tempo muito grande para o desenvolvimento dele optei por
+                não me cobrar muito e fazer com que a aplicação tivesse sua principal funcionalidade Ok.
+            </p>
+            <br>
+            <h4>Sobre o desenvolvedor:</h4>
+            <p class="text-justify">
+                Tenho 18 anos, iniciei com o python há cerca de 10 meses e sempre me incentivei a procurar desafios, de inicio esse projeto deveria rodar apenas no prompt da minha máquina,
+                mas acreditei que poderia realizar um projeto maior, sem cópiar o desenvolvimento dele de outros locais e entrei de cabeça no desafio. Acredito que existam coisas para melhora,
+                mas para o tempo que utilizei na criação do mesmo em conjunto as minhas habilidades atuais, acredito que entreguei o meu melhor e com total certeza consegui adquirir grandes
+                avanços na área e no framework.
+            </p>
+            <br>
+            <h4>Agradecimento:</h4>
+            <p class="text-justify">
+                Gostaria de agradecer a minha professora Aline Duarte Riva que me incentivou a tornar esse projeto possível, auxiliando com o banco de dados e principalmente com o desafio
+                de realizar um projeto mesmo que incialmente em prompt para a segunda parte do semestre, que me ouviu e principalmente não deixou com que eu abandonasse a ideia de realizar
+                a criação do projeto em um site.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    {% block firstTitle %}
+    {% if not request.user.is_authenticated %}
+    <h3>Crie uma conta corrente aqui:</h3>
+    {% endif %}
+    {% endblock %}
+    <form action="" method="post">
+        <div class="col-lg mt-3">
+            <form method="post" action="">
+                {% csrf_token %}
+                {{userForm|crispy}}
+                {% if not request.user.is_authenticated %}
+                {{checkingPerson|crispy}}
+                {{checkingCount|crispy}}
+                {% endif %}
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </form>
+{% endblock %}

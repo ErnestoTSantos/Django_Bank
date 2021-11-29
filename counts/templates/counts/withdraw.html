@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" action="{% url 'counts:withdraw' %}">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="withdraw">Saque</label>
+      <input name="withdraw" type="number" class="form-control" id="withdraw" placeholder="Digite o valor a ser depositado">
+    </div>
+    <button type="submit" class="btn btn-primary">Sacar</button>
+</form>
+{% endblock %}
