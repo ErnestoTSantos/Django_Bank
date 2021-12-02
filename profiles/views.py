@@ -12,7 +12,6 @@ from . import forms
 class IndexView(View):
     template_name = 'profiles/index.html'
 
-
     def get(self, *args, **kwargs):
         return render(self.request, self.template_name)
 

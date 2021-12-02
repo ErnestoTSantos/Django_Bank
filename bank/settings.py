@@ -29,6 +29,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['project-bank-ets.herokuapp.com']
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Application definition
 
